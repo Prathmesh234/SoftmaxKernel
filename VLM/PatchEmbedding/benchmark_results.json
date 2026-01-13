@@ -1,0 +1,260 @@
+{
+  "B=1,I=224,P=16,D=768": {
+    "config": "B=1,I=224,P=16,D=768",
+    "eager": {
+      "mean_ms": 0.1224,
+      "min_ms": 0.1209,
+      "gbps": 14.6,
+      "tflops": 1.889
+    },
+    "triton_matmul": {
+      "error": "incorrect (max_diff=0.1250)"
+    },
+    "triton_fused": {
+      "mean_ms": 0.0801,
+      "min_ms": 0.0773,
+      "gbps": 22.3,
+      "tflops": 2.888
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=8,I=224,P=16,D=768": {
+    "config": "B=8,I=224,P=16,D=768",
+    "eager": {
+      "mean_ms": 0.1432,
+      "min_ms": 0.1386,
+      "gbps": 41.9,
+      "tflops": 12.913
+    },
+    "triton_matmul": {
+      "mean_ms": 0.2945,
+      "min_ms": 0.2848,
+      "gbps": 20.4,
+      "tflops": 6.281
+    },
+    "triton_fused": {
+      "mean_ms": 0.4496,
+      "min_ms": 0.4478,
+      "gbps": 13.3,
+      "tflops": 4.114
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=32,I=224,P=16,D=768": {
+    "config": "B=32,I=224,P=16,D=768",
+    "eager": {
+      "mean_ms": 0.3591,
+      "min_ms": 0.3566,
+      "gbps": 56.9,
+      "tflops": 20.606
+    },
+    "triton_matmul": {
+      "mean_ms": 1.1231,
+      "min_ms": 1.1166,
+      "gbps": 18.2,
+      "tflops": 6.588
+    },
+    "triton_fused": {
+      "mean_ms": 1.7866,
+      "min_ms": 1.7663,
+      "gbps": 11.4,
+      "tflops": 4.141
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=1,I=224,P=16,D=1024": {
+    "config": "B=1,I=224,P=16,D=1024",
+    "eager": {
+      "mean_ms": 0.126,
+      "min_ms": 0.1249,
+      "gbps": 18.1,
+      "tflops": 2.446
+    },
+    "triton_matmul": {
+      "error": "incorrect (max_diff=0.1250)"
+    },
+    "triton_fused": {
+      "mean_ms": 0.0882,
+      "min_ms": 0.0857,
+      "gbps": 25.8,
+      "tflops": 3.497
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=8,I=224,P=16,D=1024": {
+    "config": "B=8,I=224,P=16,D=1024",
+    "eager": {
+      "mean_ms": 0.1446,
+      "min_ms": 0.1434,
+      "gbps": 49.7,
+      "tflops": 17.051
+    },
+    "triton_matmul": {
+      "mean_ms": 0.2861,
+      "min_ms": 0.2846,
+      "gbps": 25.1,
+      "tflops": 8.62
+    },
+    "triton_fused": {
+      "mean_ms": 0.5094,
+      "min_ms": 0.5069,
+      "gbps": 14.1,
+      "tflops": 4.841
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=1,I=224,P=14,D=1280": {
+    "config": "B=1,I=224,P=14,D=1280",
+    "eager": {
+      "mean_ms": 0.105,
+      "min_ms": 0.1037,
+      "gbps": 23.5,
+      "tflops": 3.671
+    },
+    "triton_matmul": {
+      "mean_ms": 0.0516,
+      "min_ms": 0.0506,
+      "gbps": 47.8,
+      "tflops": 7.468
+    },
+    "triton_fused": {
+      "mean_ms": 0.525,
+      "min_ms": 0.5098,
+      "gbps": 4.7,
+      "tflops": 0.734
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=8,I=224,P=14,D=1280": {
+    "config": "B=8,I=224,P=14,D=1280",
+    "eager": {
+      "mean_ms": 0.1777,
+      "min_ms": 0.1758,
+      "gbps": 51.5,
+      "tflops": 17.348
+    },
+    "triton_matmul": {
+      "mean_ms": 0.2699,
+      "min_ms": 0.2592,
+      "gbps": 33.9,
+      "tflops": 11.422
+    },
+    "triton_fused": {
+      "mean_ms": 3.4585,
+      "min_ms": 3.438,
+      "gbps": 2.6,
+      "tflops": 0.891
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=1,I=384,P=16,D=768": {
+    "config": "B=1,I=384,P=16,D=768",
+    "eager": {
+      "mean_ms": 0.1268,
+      "min_ms": 0.1257,
+      "gbps": 23.3,
+      "tflops": 5.359
+    },
+    "triton_matmul": {
+      "mean_ms": 0.067,
+      "min_ms": 0.0651,
+      "gbps": 44.0,
+      "tflops": 10.141
+    },
+    "triton_fused": {
+      "mean_ms": 0.1348,
+      "min_ms": 0.1334,
+      "gbps": 21.9,
+      "tflops": 5.039
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=8,I=384,P=16,D=768": {
+    "config": "B=8,I=384,P=16,D=768",
+    "eager": {
+      "mean_ms": 0.2532,
+      "min_ms": 0.2502,
+      "gbps": 60.6,
+      "tflops": 21.467
+    },
+    "triton_matmul": {
+      "mean_ms": 0.3969,
+      "min_ms": 0.3942,
+      "gbps": 38.6,
+      "tflops": 13.697
+    },
+    "triton_fused": {
+      "mean_ms": 0.9254,
+      "min_ms": 0.922,
+      "gbps": 16.6,
+      "tflops": 5.874
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=8,I=224,P=32,D=768": {
+    "config": "B=8,I=224,P=32,D=768",
+    "eager": {
+      "mean_ms": 0.4034,
+      "min_ms": 0.401,
+      "gbps": 19.2,
+      "tflops": 4.585
+    },
+    "triton_matmul": {
+      "mean_ms": 0.6075,
+      "min_ms": 0.6041,
+      "gbps": 12.7,
+      "tflops": 3.045
+    },
+    "triton_fused": {
+      "mean_ms": 0.73,
+      "min_ms": 0.7206,
+      "gbps": 10.6,
+      "tflops": 2.534
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  },
+  "B=8,I=256,P=8,D=512": {
+    "config": "B=8,I=256,P=8,D=512",
+    "eager": {
+      "mean_ms": 0.1092,
+      "min_ms": 0.1077,
+      "gbps": 107.5,
+      "tflops": 14.752
+    },
+    "triton_matmul": {
+      "mean_ms": 0.145,
+      "min_ms": 0.1438,
+      "gbps": 80.9,
+      "tflops": 11.104
+    },
+    "triton_fused": {
+      "mean_ms": 0.3757,
+      "min_ms": 0.374,
+      "gbps": 31.2,
+      "tflops": 4.287
+    },
+    "helion": {
+      "error": "RuntimeError: a and b must have same reduction dim"
+    }
+  }
+}

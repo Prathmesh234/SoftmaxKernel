@@ -1,0 +1,255 @@
+{
+  "B=1, I=224, P=16, D=768": {
+    "config": "B=1, I=224, P=16, D=768",
+    "eager": {
+      "mean_ms": 0.1212,
+      "min_ms": 0.1196,
+      "tflops": 1.908,
+      "gbps": 14.7
+    },
+    "triton_matmul": {
+      "mean_ms": 0.0853,
+      "min_ms": 0.0804,
+      "tflops": 2.712,
+      "gbps": 20.9
+    },
+    "triton_fused": {
+      "mean_ms": 0.0903,
+      "min_ms": 0.0869,
+      "tflops": 2.559,
+      "gbps": 19.7
+    },
+    "best": "triton_matmul",
+    "speedup": 1.42
+  },
+  "B=8, I=224, P=16, D=768": {
+    "config": "B=8, I=224, P=16, D=768",
+    "eager": {
+      "mean_ms": 0.1386,
+      "min_ms": 0.1373,
+      "tflops": 13.344,
+      "gbps": 43.3
+    },
+    "triton_matmul": {
+      "mean_ms": 0.2819,
+      "min_ms": 0.2803,
+      "tflops": 6.561,
+      "gbps": 21.3
+    },
+    "triton_fused": {
+      "mean_ms": 0.4151,
+      "min_ms": 0.4119,
+      "tflops": 4.456,
+      "gbps": 14.4
+    },
+    "best": "eager",
+    "speedup": 1.0
+  },
+  "B=32, I=224, P=16, D=768": {
+    "config": "B=32, I=224, P=16, D=768",
+    "eager": {
+      "mean_ms": 0.3581,
+      "min_ms": 0.3548,
+      "tflops": 20.66,
+      "gbps": 57.1
+    },
+    "triton_matmul": {
+      "mean_ms": 1.1149,
+      "min_ms": 1.1108,
+      "tflops": 6.636,
+      "gbps": 18.3
+    },
+    "triton_fused": {
+      "mean_ms": 1.6339,
+      "min_ms": 1.6279,
+      "tflops": 4.528,
+      "gbps": 12.5
+    },
+    "best": "eager",
+    "speedup": 1.0
+  },
+  "B=1, I=224, P=16, D=1024": {
+    "config": "B=1, I=224, P=16, D=1024",
+    "eager": {
+      "mean_ms": 0.1253,
+      "min_ms": 0.1239,
+      "tflops": 2.46,
+      "gbps": 18.2
+    },
+    "triton_matmul": {
+      "mean_ms": 0.0833,
+      "min_ms": 0.0801,
+      "tflops": 3.699,
+      "gbps": 27.3
+    },
+    "triton_fused": {
+      "mean_ms": 0.0991,
+      "min_ms": 0.0957,
+      "tflops": 3.11,
+      "gbps": 23.0
+    },
+    "best": "triton_matmul",
+    "speedup": 1.5
+  },
+  "B=8, I=224, P=16, D=1024": {
+    "config": "B=8, I=224, P=16, D=1024",
+    "eager": {
+      "mean_ms": 0.1448,
+      "min_ms": 0.1428,
+      "tflops": 17.037,
+      "gbps": 49.7
+    },
+    "triton_matmul": {
+      "mean_ms": 0.2825,
+      "min_ms": 0.2809,
+      "tflops": 8.73,
+      "gbps": 25.5
+    },
+    "triton_fused": {
+      "mean_ms": 0.4839,
+      "min_ms": 0.4814,
+      "tflops": 5.096,
+      "gbps": 14.9
+    },
+    "best": "eager",
+    "speedup": 1.0
+  },
+  "B=1, I=224, P=14, D=1280": {
+    "config": "B=1, I=224, P=14, D=1280",
+    "eager": {
+      "mean_ms": 0.1051,
+      "min_ms": 0.1033,
+      "tflops": 3.667,
+      "gbps": 23.5
+    },
+    "triton_matmul": {
+      "mean_ms": 0.0839,
+      "min_ms": 0.081,
+      "tflops": 4.591,
+      "gbps": 29.4
+    },
+    "triton_fused": {
+      "mean_ms": 0.2405,
+      "min_ms": 0.2371,
+      "tflops": 1.603,
+      "gbps": 10.2
+    },
+    "best": "triton_matmul",
+    "speedup": 1.25
+  },
+  "B=8, I=224, P=14, D=1280": {
+    "config": "B=8, I=224, P=14, D=1280",
+    "eager": {
+      "mean_ms": 0.1761,
+      "min_ms": 0.1743,
+      "tflops": 17.506,
+      "gbps": 52.0
+    },
+    "triton_matmul": {
+      "mean_ms": 0.2671,
+      "min_ms": 0.2655,
+      "tflops": 11.543,
+      "gbps": 34.3
+    },
+    "triton_fused": {
+      "mean_ms": 1.5044,
+      "min_ms": 1.4826,
+      "tflops": 2.049,
+      "gbps": 6.1
+    },
+    "best": "eager",
+    "speedup": 1.0
+  },
+  "B=1, I=384, P=16, D=768": {
+    "config": "B=1, I=384, P=16, D=768",
+    "eager": {
+      "mean_ms": 0.1266,
+      "min_ms": 0.1253,
+      "tflops": 5.369,
+      "gbps": 23.3
+    },
+    "triton_matmul": {
+      "mean_ms": 0.0825,
+      "min_ms": 0.0796,
+      "tflops": 8.235,
+      "gbps": 35.8
+    },
+    "triton_fused": {
+      "mean_ms": 0.1212,
+      "min_ms": 0.1191,
+      "tflops": 5.608,
+      "gbps": 24.4
+    },
+    "best": "triton_matmul",
+    "speedup": 1.53
+  },
+  "B=8, I=384, P=16, D=768": {
+    "config": "B=8, I=384, P=16, D=768",
+    "eager": {
+      "mean_ms": 0.2524,
+      "min_ms": 0.2504,
+      "tflops": 21.539,
+      "gbps": 60.8
+    },
+    "triton_matmul": {
+      "mean_ms": 0.4216,
+      "min_ms": 0.4168,
+      "tflops": 12.894,
+      "gbps": 36.4
+    },
+    "triton_fused": {
+      "mean_ms": 0.8119,
+      "min_ms": 0.8034,
+      "tflops": 6.695,
+      "gbps": 18.9
+    },
+    "best": "eager",
+    "speedup": 1.0
+  },
+  "B=8, I=224, P=32, D=768": {
+    "config": "B=8, I=224, P=32, D=768",
+    "eager": {
+      "mean_ms": 0.3952,
+      "min_ms": 0.3904,
+      "tflops": 4.68,
+      "gbps": 19.6
+    },
+    "triton_matmul": {
+      "mean_ms": 0.5805,
+      "min_ms": 0.5781,
+      "tflops": 3.186,
+      "gbps": 13.3
+    },
+    "triton_fused": {
+      "mean_ms": 0.7182,
+      "min_ms": 0.714,
+      "tflops": 2.575,
+      "gbps": 10.8
+    },
+    "best": "eager",
+    "speedup": 1.0
+  },
+  "B=8, I=256, P=8, D=512": {
+    "config": "B=8, I=256, P=8, D=512",
+    "eager": {
+      "mean_ms": 0.1094,
+      "min_ms": 0.1066,
+      "tflops": 14.719,
+      "gbps": 107.2
+    },
+    "triton_matmul": {
+      "mean_ms": 0.1505,
+      "min_ms": 0.1492,
+      "tflops": 10.701,
+      "gbps": 77.9
+    },
+    "triton_fused": {
+      "mean_ms": 0.2679,
+      "min_ms": 0.2662,
+      "tflops": 6.012,
+      "gbps": 43.8
+    },
+    "best": "eager",
+    "speedup": 1.0
+  }
+}
