@@ -1,0 +1,20 @@
+[project]
+name = "softmax-kernels"
+version = "0.1.0"
+description = "Softmax kernel benchmarks for H100 SXM GPU"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.1.0",
+    "triton>=2.1.0",
+    "helion @ git+https://github.com/pytorch/helion.git",
+]
+
+# Note: pytorch-helion is only available from GitHub, not PyPI
+# Install manually with: pip install git+https://github.com/pytorch/helion.git
+# The softmax_helion.py script will fall back to torch.compile if helion is not installed
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "matplotlib",
+]
