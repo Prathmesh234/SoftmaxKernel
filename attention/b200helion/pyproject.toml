@@ -1,0 +1,11 @@
+[project]
+name = "b200helion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "helion>=0.2.10",
+    "torch>=2.10.0",
+    "triton>=3.6.0",
+]

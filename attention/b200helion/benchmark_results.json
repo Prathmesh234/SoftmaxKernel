@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-01-24T21:44:07.119908",
+  "gpu": "NVIDIA B200",
+  "dtype": "torch.bfloat16",
+  "warmup": 25,
+  "iters": 100,
+  "results": {
+    "[2, 32, 1024, 128]": {
+      "helion_mean_ms": 0.147,
+      "helion_min_ms": 0.1428,
+      "pytorch_mean_ms": 0.1235,
+      "pytorch_min_ms": 0.1214,
+      "speedup": 0.84,
+      "tflops": 233.79,
+      "max_diff": 0.001953
+    },
+    "[4, 32, 2048, 128]": {
+      "helion_mean_ms": 0.7319,
+      "helion_min_ms": 0.7262,
+      "pytorch_mean_ms": 0.7316,
+      "pytorch_min_ms": 0.7287,
+      "speedup": 1.0,
+      "tflops": 375.56,
+      "max_diff": 0.000977
+    },
+    "[4, 32, 4096, 128]": {
+      "helion_mean_ms": 2.7222,
+      "helion_min_ms": 2.7107,
+      "pytorch_mean_ms": 2.8071,
+      "pytorch_min_ms": 2.8038,
+      "speedup": 1.03,
+      "tflops": 403.91,
+      "max_diff": 0.000977
+    },
+    "[8, 32, 2048, 128]": {
+      "helion_mean_ms": 1.4363,
+      "helion_min_ms": 1.4297,
+      "pytorch_mean_ms": 1.4337,
+      "pytorch_min_ms": 1.4313,
+      "speedup": 1.0,
+      "tflops": 382.75,
+      "max_diff": 0.001953
+    },
+    "[16, 64, 4096, 128]": {
+      "helion_mean_ms": 20.7709,
+      "helion_min_ms": 20.7583,
+      "pytorch_mean_ms": 21.945,
+      "pytorch_min_ms": 21.9372,
+      "speedup": 1.06,
+      "tflops": 423.48,
+      "max_diff": 0.000977
+    },
+    "[8, 64, 8192, 128]": {
+      "helion_mean_ms": 41.6737,
+      "helion_min_ms": 41.6521,
+      "pytorch_mean_ms": 43.5296,
+      "pytorch_min_ms": 43.5199,
+      "speedup": 1.04,
+      "tflops": 422.14,
+      "max_diff": 0.000977
+    }
+  }
+}
